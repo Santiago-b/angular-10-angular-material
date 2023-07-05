@@ -2,11 +2,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
-import { AppComponent, CustomDPHeader } from './app.component';
-import { HelloComponent } from './hello.component';
+import { AppComponent, ExampleHeader } from './app.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { CommonModule } from '@angular/common';
+import { MatNativeDateModule } from '@angular/material/core';
 
 @NgModule({
   imports: [
@@ -15,8 +16,10 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatDatepickerModule,
     MatFormFieldModule,
     MatGridListModule,
+    CommonModule,
+    MatNativeDateModule,
   ],
-  declarations: [AppComponent, HelloComponent, CustomDPHeader],
+  declarations: [AppComponent, ExampleHeader],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
