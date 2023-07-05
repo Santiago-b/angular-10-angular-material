@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent, ExampleHeader } from './app.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
@@ -18,6 +18,7 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatGridListModule,
     CommonModule,
     MatNativeDateModule,
+    ReactiveFormsModule,
   ],
   declarations: [AppComponent, ExampleHeader],
   bootstrap: [AppComponent],
